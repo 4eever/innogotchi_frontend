@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/innogotchi_frontend/static/js/main.f0ff3e9f.js",
+    "main.js": "/innogotchi_frontend/static/js/main.c17347ce.js",
     "index.html": "/innogotchi_frontend/index.html",
-    "main.f0ff3e9f.js.map": "/innogotchi_frontend/static/js/main.f0ff3e9f.js.map"
+    "main.c17347ce.js.map": "/innogotchi_frontend/static/js/main.c17347ce.js.map"
   },
   "entrypoints": [
-    "static/js/main.f0ff3e9f.js"
+    "static/js/main.c17347ce.js"
   ]
 }
