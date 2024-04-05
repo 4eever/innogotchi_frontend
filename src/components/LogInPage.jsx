@@ -6,7 +6,7 @@ import { domen } from "../constants";
 
 export default function LogInPage() {
     const [user, setUser] = useState({email: '', password: ''});
-    const url = `http://${domen}/api/User/log-in`;
+    const url = `https://${domen}/api/User/log-in`;
     const navigate = useNavigate();
     const [errorMessages, setErrorMessages] = useState('');
 

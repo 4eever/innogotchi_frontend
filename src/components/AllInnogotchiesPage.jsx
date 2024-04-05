@@ -104,7 +104,7 @@ export default function AllInnogotchiesPage() {
     }
 
     async function getAllInnogotchies() {
-        const url = `http://${domen}/api/Innogotchi/all-innogotchies?userId=${id}`;
+        const url = `https://${domen}/api/Innogotchi/all-innogotchies?userId=${id}`;
     
         try {
           const response = await fetch(url, {

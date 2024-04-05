@@ -6,7 +6,7 @@ import { domen } from "../constants";
 
 export default function SignUpPage() {
     const [user, setUser] = useState({email: '', password: '', firstName: '', lastName: ''});
-    const url = `http://${domen}/api/User/sing-up`;
+    const url = `https://${domen}/api/User/sing-up`;
     const navigate = useNavigate();
     const [errorMessages, setErrorMessages] = useState('');
 

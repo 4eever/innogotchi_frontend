@@ -12,7 +12,7 @@ export default function AccountDetalesPage() {
     const [showPassword, setShowPassword] = useState(false);
     const [isDisabled, setIsDisabled] = useState(true);
     const [newPassword, setNewPassword] = useState('');
-    const url = `http://${domen}/api/User/account-detales`;
+    const url = `https://${domen}/api/User/account-detales`;
     const fileInput = useRef(null);
     const [errorMessages, setErrorMessages] = useState('');
     const navigate = useNavigate();
@@ -124,7 +124,7 @@ export default function AccountDetalesPage() {
 
     async function getUser() {
         try {
-            const url = `http://${domen}/api/User/?userId=${id}`;
+            const url = `https://${domen}/api/User/?userId=${id}`;
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {

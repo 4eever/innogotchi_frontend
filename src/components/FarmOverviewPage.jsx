@@ -26,7 +26,7 @@ export default function FarmOverviewPage() {
 
     async function getFarms() {
         try {
-            const url = `http://${domen}/api/Farm/all-user-farms?userId=${id}`;
+            const url = `https://${domen}/api/Farm/all-user-farms?userId=${id}`;
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {
@@ -57,7 +57,7 @@ export default function FarmOverviewPage() {
 
     async function getUser() {
         try {
-            const url = `http://${domen}/api/User/?userId=${id}`;
+            const url = `https://${domen}/api/User/?userId=${id}`;
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {

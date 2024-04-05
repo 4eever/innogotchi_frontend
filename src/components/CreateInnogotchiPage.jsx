@@ -67,7 +67,7 @@ export default function CreateInnogotchiPage() {
     }
 
     try {
-      const url = `http://${domen}/api/Innogotchi/innogotchi-body-part-image?innogotchiBodyPartName=${bodyPartName}&innogotchiBodyPartNumber=${bodyPartNumber}`;
+      const url = `https://${domen}/api/Innogotchi/innogotchi-body-part-image?innogotchiBodyPartName=${bodyPartName}&innogotchiBodyPartNumber=${bodyPartNumber}`;
 
       const response = await fetch(url, {
         method: "GET",
@@ -118,7 +118,7 @@ export default function CreateInnogotchiPage() {
   }
 
   async function createInnogotchi() {
-    const url = `http://${domen}/api/Innogotchi/create-innogotchi?farmId=${id}`;
+    const url = `https://${domen}/api/Innogotchi/create-innogotchi?farmId=${id}`;
     const data = {
       farmid: id,
       innogotchiName: innogotchiName,

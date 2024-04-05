@@ -44,7 +44,7 @@ export default function FarmPage() {
 
   async function getCollaborators() {
     try {
-      const url = `http://${domen}/api/Farm/collaborators?farmId=${id}`;
+      const url = `https://${domen}/api/Farm/collaborators?farmId=${id}`;
       const response = await fetch(url, {
         method: "GET",
         headers: {
@@ -68,7 +68,7 @@ export default function FarmPage() {
   }
 
   async function logInFarm() {
-    const url = `http://${domen}/api/Farm/log-in-farm`;
+    const url = `https://${domen}/api/Farm/log-in-farm`;
     const data = {
       userId: userId,
       farmId: id,
@@ -96,7 +96,7 @@ export default function FarmPage() {
   }
 
   async function getRole() {
-    const url = `http://${domen}/api/Farm/get-role?userId=${userId}&farmId=${id}`;
+    const url = `https://${domen}/api/Farm/get-role?userId=${userId}&farmId=${id}`;
     console.log("Id:", userId, "FarmId:", id);
 
     try {
@@ -122,7 +122,7 @@ export default function FarmPage() {
   }
 
   async function handleCollNameChange() {
-    const url = `http://${domen}/api/Farm/add-collaborator?farmId=${id}`;
+    const url = `https://${domen}/api/Farm/add-collaborator?farmId=${id}`;
     const data = {
       userEmail: collName,
       farmId: id,
@@ -156,7 +156,7 @@ export default function FarmPage() {
   }
 
   async function getFarmName() {
-    const url = `http://${domen}/api/Farm/farm-name?farmId=${id}`;
+    const url = `https://${domen}/api/Farm/farm-name?farmId=${id}`;
 
     try {
       const response = await fetch(url, {
@@ -178,7 +178,7 @@ export default function FarmPage() {
   }
 
   async function deadInnogotchi(innogotchiId) {
-    const url = `http://${domen}/api/Innogotchi/dead?InnogotchiId=${innogotchiId}`;
+    const url = `https://${domen}/api/Innogotchi/dead?InnogotchiId=${innogotchiId}`;
 
     try {
       const response = await fetch(url, {
@@ -252,7 +252,7 @@ export default function FarmPage() {
   }
 
   async function feedInnogotchi(innogotchiId) {
-    const url = `http://${domen}/api/Innogotchi/feed?innogotchiId=${innogotchiId}`;
+    const url = `https://${domen}/api/Innogotchi/feed?innogotchiId=${innogotchiId}`;
 
     try {
       const response = await fetch(url, {
@@ -274,7 +274,7 @@ export default function FarmPage() {
   }
 
   async function drinkInnogotchi(innogotchiId) {
-    const url = `http://${domen}/api/Innogotchi/drink?innogotchiId=${innogotchiId}`;
+    const url = `https://${domen}/api/Innogotchi/drink?innogotchiId=${innogotchiId}`;
 
     try {
       const response = await fetch(url, {
@@ -296,7 +296,7 @@ export default function FarmPage() {
   }
 
   async function getFarmInnogotchies() {
-    const url = `http://${domen}/api/Innogotchi/farm-innogotchies?farmId=${id}`;
+    const url = `https://${domen}/api/Innogotchi/farm-innogotchies?farmId=${id}`;
 
     try {
       const response = await fetch(url, {

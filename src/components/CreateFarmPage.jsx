@@ -5,7 +5,7 @@ import { domen } from "../constants";
 
 export default function CreateFarmPage() {
     const[farmName, setFarmName] = useState("");
-    const url = `http://${domen}/api/Farm/create-farm`;
+    const url = `https://${domen}/api/Farm/create-farm`;
     const { id } = useParams();
     const navigate = useNavigate();
     const [errorMessages, setErrorMessages] = useState('');

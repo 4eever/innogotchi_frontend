@@ -14,7 +14,7 @@ export default function FarmDetalesPage() {
   }, []);
 
   async function getFarmStatististics() {
-    const url = `http://${domen}/api/Farm/farm-statistics?farmId=${id}`;
+    const url = `https://${domen}/api/Farm/farm-statistics?farmId=${id}`;
 
     try {
       const response = await fetch(url, {
